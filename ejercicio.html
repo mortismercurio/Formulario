@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="https://httpbin.org/get" method="get" >
+        <fieldset>
+            <p>Datos Personales</p>
+
+        <label for="nombre">Nombre</label>
+        <input type="text"  id="name" name="nombre" >
+
+        <label for="apellido">Apellidos</label>
+        <input type="text" id="apellidos" name="apellidos">
+
+        <label for="edad">Edad</label>
+        <input type="number" id="edad" name="edad">
+
+        <label for="fechanacimiento">Fecha de Nacimiento</label>
+        <input type="date" id="fechanacimiento" name="fechanacimiento">
+
+        </fieldset>
+
+        <fieldset>
+
+            <p>Datos de Contacto</p>
+
+            <label for="correo">correo</label>
+            <input type="email" id="dorreo" name="correo">
+
+            <label for="telefono">telefono</label>
+            <input type="tel" id="telefono" name="telefono">
+
+               <label for="provincias">selecciona provincias</label>
+
+        <select name="provincias" id="provincias">
+        <option value="Almeria">Almeria</option>
+        <option value="Granada">Granada</option>
+        <option value="Sevilla">Sevilla</option>
+        <option value="Cordoba">Córdoba</option>
+        <option value="Jaen">Jaen</option>
+        <option value="Huelva">Huelva</option>
+        <option value="Cadiz">Cadiz</option>
+</select>
+
+
+
+        </fieldset>
+
+        <fieldset>
+
+            <p>informacion del curso</p>
+
+            <input type="radio" id="presencial" name="turno" value="presencial" > 
+            <label for="presencial">Presencial</label>
+
+
+             <input type="radio" id="online" name="turno" value="online" > 
+            <label for="online">Online</label>
+
+             <input type="radio" id="mixto" name="turno" value="mixto" > 
+            <label for="mixto">Mixto</label>
+        </fieldset>
+
+
+            <fieldset>
+
+                <p>Intereses</p>
+
+                <input type="checkbox" id="Biologia" name="intereses"
+ value="Biologia">
+
+ <label for="Biologia">Biologia</label>
+
+
+ <input type="checkbox" id="Quimica" name="intereses"
+ value="Quimica">
+
+ <label for="Quimica">Quimica</label>
+
+ <input type="checkbox" id="Programacion" name="intereses"
+ value="Programacion">
+
+ <label for="Programacion">Programacion</label>
+
+ <input type="checkbox" id="Matematicas" name="intereses"
+ value="Matematicas">
+ <label for="Matematicas">Matematicas</label>
+ </fieldset>
+
+ <fieldset>
+
+    <p>Observaciones</p>
+
+    <label for="mensaje">Mensaje</label>
+    <textarea name="mensaje" id="mensaje" rows="5"></textarea>
+
+ </fieldset>
+
+
+            <button type="submit"> Enviar
+
+
+            </button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+
+
+
+
+
+
+
+    </form>
+
+
+
+    
+</body>
+</html>
