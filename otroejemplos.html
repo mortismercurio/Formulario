@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form >
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+
+        <label for="correo">Correo electronico</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com"> 
+
+        <label for="edad">Edad</label>
+
+        <input type="number" id="edad" name="edad" min="18" max="65">
+
+
+        <label for="usuario">Nombre de usuario</label>
+
+        <input type="text" id="usuario" name="usuario" minlength="4" maxlength="15">
+
+        <label for="curso">Curso</label>
+        <input type="text" id="curso" name="curso" value="Diseño web" readonly>
+
+        <label for="codigo">Codigo</label>
+        <input type="text" id="codigo" name="codigo" value="DW001" disabled>
+
+        <p>Modalidad de formacion</p>
+
+        <input type="radio" id="presencial" name="modalidad" value="presencial" checked>
+        <label for="presencial">Presencial</label>
+
+        <input type="radio" id="online" name="modalidad" value="online">
+
+        <label for="online">Online</label>
+
+        <label for="idiomas">Idiomas que conoces</label>
+
+        <select name="idiomas" id="idiomas" multiple size="1">
+
+
+            <option value="ingles">Ingles</option>
+            <option value="frances">Frances</option>
+            <option value="aleman">Aleman</option>
+            <option value="italiano">Italiano</option>
+
+        </select>
+<fieldset>
+        <label for="buscar">Buscar</label>
+
+            <input type="text" id="buscar" name="buscar" autofocus>
+         </fieldset>
+
+         <label for="codigo">Codigo de acceso</label>
+         <input type="text" id="codigo" name="codigo" pattern="[0-9]{4}" title="introduce cuatro numeros" required>
+
+
+        
+        <button type="submit">Enviar</button>
+
+
+
+
+
+    </form>
+    
+</body>
+</html>
