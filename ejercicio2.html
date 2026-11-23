@@ -1,108 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
+
 <body>
     <form method="get" action="https://httpbin.org/get">
-          <fieldset>
+        <fieldset>
             <p>Datos Personales</p>
 
-        <label for="nombre">Nombre</label>
-        <input type="text"  id="name" name="nombre" autofocus >
+            <div class="fila">
+                <div class="campo">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="name" name="nombre" autofocus required>
+                </div>
+                <div class="campo">
+                    <label for="apellido">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" required>
+                </div>
+            </div>
 
-        <label for="apellido">Apellidos</label>
-        <input type="text" id="apellidos" name="apellidos">
+            <label for="edad">Edad</label>
+            <input type="number" id="edad" name="edad" min="18" max="100">
 
-        <label for="edad">Edad</label>
-        <input type="number" id="edad" name="edad" min="18" max="100">
 
-        <label for="correo">correo</label>
-        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com">
+            <div class="fila">
+                <div class="campo">
+                    <label for="correo">correo</label>
+                    <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
 
-        <label for="telefono">telefono</label>
-        <input type="tel" id="telefono" name="telefono">
- 
+                </div>
+
+                <div class="campo">
+                    <label for="telefono">telefono</label>
+                    <input type="tel" id="telefono" name="telefono">
+                </div>
+            </div>
+
 
         </fieldset>
 
         <fieldset>
 
             <p>Datos de Reserva</p>
+
+            <div class="fila">
+
+                <div class="campo">
             <label for="habitacion">Seleccionar Habitacion</label>
 
-            
-        <select name="habitacion" id="habitacion">
-        <option value="individual">Individual</option>
-        <option value="doble">Doble</option>
-        <option value="familiar">Familiar</option>
 
-    
-</select>
-
-<label for="fecha">Fecha de llegada</label>
-
-<input type="date">
-<label for="huespedes"></label>
-         <input type="number" id="huespedes" min="1" max="6">
+            <select name="habitacion" id="habitacion">
+                <option value="individual">Individual</option>
+                <option value="doble">Doble</option>
+                <option value="familiar">Familiar</option>
 
 
-         <p>Regimen de alojamiento</p>
+            </select>
+            </div>
 
-         <label for="regimen">Solo alojamiento</label>
+            <div class="campo">
 
-         <input type="radio" name="alojamiento" id="soloalojamiento" value="soloalojamiento" checked>
+          
 
-         
+           
+            <label for="huespedes">Número de huespedes</label>
+            <input type="number" id="huespedes" min="1" max="6">
+            </div>
 
-         <label for="regimen">desayuno incluido</label>
-
-         <input type="radio" name="alojamiento" id="desayunoincluido" value="desayunoincluido">
-
-         
-
-
-
-         <label for="regimen">Media pension</label>
-
-         <input type="radio" name="alojamiento" id="mediapension" value="mediapension">
+            </div>
 
 
-         <p>Servicios adicionales</p>
+              <label for="fecha">Fecha de llegada</label>
 
-         <select name="servicios" id="servicios" multiple size="1">
-
-
-            <option value="aparcamiento">Aparcamiento</option>
-            <option value="cuna">Cuna</option>
-            <option value="serviciolavanderia">Servicio Lavanderia</option>
-            <option value="visitaguiada">Visita Guiada</option>
+               <input type="date" id="fecha">
 
 
-        </select>
+            <p>Regimen de alojamiento</p>
 
-        <p>Informacion adicional</p>
-         <label for="codigo">Codigo Reserva</label>
-        <input type="text" id="codigo" name="codigo" value="CR2926" readonly>
+            <label for="regimen">Solo alojamiento</label>
+
+            <input type="radio" name="alojamiento" id="soloalojamiento" value="soloalojamiento" checked>
 
 
-          <label for="descuento">Descuento Promocional</label>
-        <input type="text" id="descuento" name="descuento" value="NO DISPONIBLE" disabled>
 
-          <label for="codigocl">Codigo Cliente</label>
-        <input type="text" id="codigocl" name="codigocl" pattern="[0-9]{6}" title="introduce seis numeros" required>
+            <label for="regimen">desayuno incluido</label>
+
+            <input type="radio" name="alojamiento" id="desayunoincluido" value="desayunoincluido">
+
+
+
+
+
+            <label for="regimen">Media pension</label>
+
+            <input type="radio" name="alojamiento" id="mediapension" value="mediapension">
+
+
+            <p>Servicios adicionales</p>
+
+            <select name="servicios" id="servicios" multiple size="1">
+
+
+                <option value="aparcamiento">Aparcamiento</option>
+                <option value="cuna">Cuna</option>
+                <option value="serviciolavanderia">Servicio Lavanderia</option>
+                <option value="visitaguiada">Visita Guiada</option>
+
+
+            </select>
+
+            <p>Informacion adicional</p>
+            <label for="codigo">Codigo Reserva</label>
+            <input type="text" id="codigo" name="codigo" value="CR2926" readonly>
+
+
+            <label for="descuento">Descuento Promocional</label>
+            <input type="text" id="descuento" name="descuento" value="NO DISPONIBLE" disabled>
+
+            <label for="codigocl">Codigo Cliente</label>
+            <input type="text" id="codigocl" name="codigocl" pattern="[0-9]{6}" title="introduce seis numeros" required>
+<div>
+            <label for="observaciones">Observaciones</label>
+            <textarea name="observaciones" id="observaciones" rows="10"></textarea>
+            </div>
 
         </fieldset>
 
 
-<button type="submit">
-    Enviar
-    
-</button>
+        <button type="submit" class="boton-enviar">
+            Enviar
+
+        </button>
+
+        <button type="reset" class="boton-borrar">Borrar</button>
 
     </form>
-    
+
 </body>
+
 </html>

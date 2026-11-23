@@ -1,0 +1,178 @@
+
+body {
+
+    background-color: gray;
+
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+input[type="text"] {
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+input[type="email"] {
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+
+}
+
+
+input[type="tel"] {
+
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+
+
+
+}
+
+input[type="number"] {
+
+      width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+
+
+}
+
+input[type="date"] {
+
+      width: 100%;
+    padding: 10px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+
+form {
+    max-width: 800px;
+    margin: 30px auto;
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0 0,1);
+    
+}
+
+.fila{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+
+
+}
+textarea{
+    width: 100%;
+}
+fieldset {
+    border: 1px solid #cbd5e1;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+
+}
+
+
+legend {
+    font-size: 20px;
+    font-weight: bold;
+    color: #263c59;
+    padding: 0 10px;
+    
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+
+    background-color: #263c59;
+    outline: 2px solid #b8dcef;
+}
+
+input:disabled {
+
+    background-color: #acacac;
+    color: rgb(0, 0, 0);
+    cursor: not-allowed;
+}
+
+input:required:valid {
+    border-color: green;
+
+
+}
+
+input:required:invalid {
+
+    border-color: red;
+}
+input:required {
+    outline: 5px solid red;
+
+}
+
+button {
+
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.boton-enviar {
+
+    background-color: #263c59;
+
+
+}
+
+.boton-enviar:hover {
+    background-color: #1976a3;
+}
+
+button {
+
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;}
+
+    .boton-borrar {
+        background-color: red;
+    }
+.boton-borrar:hover {
+
+    background-color: rgb(177, 65, 65);
+}
+
