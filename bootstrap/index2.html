@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Activa Córdoba</title>
+
     <link rel="stylesheet" href="recursos/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="estilobootstrap.css">
 
 
 
@@ -27,12 +29,12 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
+                        <a class="nav-link" href="#">Reseñas</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Dropdown
+                            Actividades
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Inicio</a></li>
@@ -64,9 +66,10 @@
 
         <button type="button" class="btn btn-success mt-5">Ver Actividades</button>
 
-        <div style= "display: grid; grid-template-columns: 1fr 1fr ; gap: 20px; width: 60%; margin: auto">
+        <div
+            style="display: grid; grid-template-columns: 1fr 1fr 1fr ; grid-template-rows: 1fr 1fr; gap: 20px; width: 60%; margin: auto">
 
-            <div class="card mt-5" style="width: 18rem;">
+            <div class="card mt-5 shadow-lg" style="width: 18rem;">
                 <img src="Mezquitacordoba.jpg" class="card-img-top" alt="mezquita">
                 <div class="card-body">
                     <h5 class="card-title">Visita guiada mezquita</h5>
@@ -75,27 +78,150 @@
                 </div>
                 <span class="badge rounded-pill text-bg-dark">45€</span>
             </div>
-            <div class="card mt-5" style="width: 18rem;">
-                <img src="Mezquitacordoba.jpg" class="card-img-top" alt="mezquita">
+            <div class="card mt-5 shadow-lg" style="width: 18rem;">
+                <img src="camarafotos.jpg" class="card-img-top" alt="camara">
                 <div class="card-body">
-                    <h5 class="card-title">Visita guiada mezquita</h5>
-                    <p class="card-text">Ofrecemos visita completa en la mezquita.</p>
+                    <h5 class="card-title">Taller Fotografía</h5>
+                    <p class="card-text">Ofrecemos un taller de fotografia.</p>
                     <a href="#" class="btn btn-primary">Reserva</a>
 
                 </div>
-                <span class="badge rounded-pill text-bg-dark">45€</span>
+                <span class="badge rounded-pill text-bg-dark">25€</span>
+
             </div>
+
+
+            <div class="card mt-5 shadow-lg" style="width: 18rem;">
+                <img src="cocinacordobesa.jpg" class="card-img-top" alt="cocina">
+                <div class="card-body">
+                    <h5 class="card-title">Taller Cocina Córdobesa</h5>
+                    <p class="card-text">Ofrecemos gastronomia variada de platos tradicionales de Córdoba.</p>
+                    <a href="#" class="btn btn-primary">Reserva</a>
+                </div>
+                <span class="badge rounded-pill text-bg-dark">35€</span>
+            </div>
+
+
+
+
+
+
+            <div class="card mt-5 shadow-lg" style="width: 18rem;">
+                <img src="sierramorena.jpg" class="card-img-top" alt="senderismo">
+                <div class="card-body">
+                    <h5 class="card-title">Senderismo Sierra Morena</h5>
+                    <p class="card-text">Senderismo por la sierra de Córdoba.</p>
+                    <a href="#" class="btn btn-primary">Reserva</a>
+                </div>
+                <span class="badge rounded-pill text-bg-dark">12€</span>
+            </div>
+
+
+            <div class="card mt-5 shadow-lg" style="width: 18rem;">
+                <img src="visitanocturnacordoba.jpg" class="card-img-top" alt="nocturna">
+                <div class="card-body">
+                    <h5 class="card-title">Visita Nocturna Córdoba</h5>
+                    <p class="card-text">Visita guiada por las calles de Córdoba Encantada.</p>
+                    <a href="#" class="btn btn-primary">Reserva</a>
+                </div>
+                <span class="badge rounded-pill text-bg-dark">18€</span>
+            </div>
+
+
+            <div class="card mt-5 shadow-lg" style="width: 18rem;">
+                <img src="tallerceramica.png" class="card-img-top" alt="cocina">
+                <div class="card-body">
+                    <h5 class="card-title">Taller Cerámica</h5>
+                    <p class="card-text">Ofrecemos un taller alfareria tradicional cordobesa</p>
+                    <a href="#" class="btn btn-primary">Reserva</a>
+                </div>
+                <span class="badge rounded-pill text-bg-dark">30€</span>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
         </div>
-        </div>
+        <section id="inscripcion" class="container my-5">
+
+            <h2 class="text-center mb-4"> Inscribete en una actividad</h2>
+
+            <form action="https://httpbin.org/get" method="get"></form>
+
+
+            <form>
+                <div class="mb-3">
+                    <label for="correo" class="form-label">Correo</label>
+                    <input type="mail" class="form-control" id="correo" aria-describedby="correo">
+
+                </div>
+                <div class="mb-3">
+                    <label for="telefono" class="form-label">Telefono</label>
+                    <input type="tel" class="form-control" id="exampleInputPassword1">
+                </div>
+
+
+
+
+
+
+                <div class="form-field">
+                    <label for="fieldSelect" class="form-label">Actividades</label>
+                    <select class="form-select" id="fieldSelect">
+                        <option selected>Elije una</option>
+                        <option value="1">Visita Guiada Mezquita</option>
+                        <option value="2">Taller Fotografía</option>
+                        <option value="3">Taller Cocina Cordobesa</option>
+                        <option value="4">Senderismo Sierra Morena</option>
+                        <option value="5">Visita Nocturna</option>
+                        <option value="6">Taller Cerámica</option>
+
+
+                    </select>
+
+                    <div class="mb-3">
+                        <label for="participantes" class="form-label">Participantes</label>
+                        <input type="number" class="participantes" id="participantes" id="participantes" min="1" max="5"
+                            required>
+                    </div>
+
+
+                </div>
+                <p form="radio" class="form-label">Selecciona turno</p>
+                <div class="form-field">
+                    <input class="radio" name="radios" type="radio" id="radioLabel" />
+                    <label for="radioLabel">Mañana</label>
+                </div>
+                <div class="form-field">
+                    <input class="radio" name="radios" type="radio" id="radioLabel2" />
+                    <label for="radioLabel2">Tarde</label>
+                </div>
+
+                <div class="form-field">
+  <label for="observaciones" class="form-label">Observaciones</label>
+  <textarea class="form-control" id="observaciones"></textarea>
+</div>
+
+<input type="checkbox" id="checkIndeterminate" class="check" aria-label="..." />
+ <label for="checkdescription">Acepta las condiciones</label>
+
+
+        </section>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                 <button type="reset" class="btn btn-primary">Actualizar</button>
+
+            </form>
+
     </main>
 
-
-
-
-
     <script src="recursos/bootstrap.min.js"></script>
-
-
 
 </body>
 

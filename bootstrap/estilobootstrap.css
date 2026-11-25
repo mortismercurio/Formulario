@@ -1,0 +1,21 @@
+.card-img-top {
+
+    height: 150px;
+
+    
+
+}
+
+.car-body {
+
+    height: 400px;
+    position: relative;
+
+}
+
+.car-body .btn {
+
+    position: absolute;
+    bottom: 20px;
+    left: 25%;
+}
